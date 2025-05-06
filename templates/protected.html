@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Zona protegida</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Bienvenido, {{ username }}</h2>
+    <p>Has iniciado sesión correctamente.</p>
+    <form action="/logout" method="post">
+      <button type="submit">Cerrar sesión</button>
+    </form>
+  </div>
+</body>
+</html>
